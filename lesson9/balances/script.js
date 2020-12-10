@@ -6,13 +6,7 @@ const dayTransactions = [
   { userId: 44, amount: 90, operation: 'sell' },
 ];
 
-
-
-function getTotalRevenue (arr) {
-  return arr.map(el => Object.values(el)[1]).reduce((acc, n) => acc + n);
-}
-
+const getTotalRevenue = arr => arr.map(item => item.amount).reduce((acc, item) => acc + item );
 
 console.log(getTotalRevenue(dayTransactions));
-
 
