@@ -1,8 +1,7 @@
-'use strick';
+const getTotalRevenue = (dayTransactions) => {
+  const result = dayTransactions.reduce(function (acc, el) {
+    return acc + el.amount;
+  }, 0);
 
-
-
-const getTotalRevenue = arr => arr.map(item => item.amount).reduce((acc, item) => acc + item );
-
-
-
+  return result;
+};
