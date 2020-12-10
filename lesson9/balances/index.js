@@ -1,4 +1,5 @@
-'use strick';
+/* eslint-disable spaced-comment */
+
 
 //input arr
 //output num
