@@ -7,7 +7,7 @@
 // output arr
 
 // eslint-disable-next-line consistent-return
-const withdraw = (clients, balances, client, amount) => {
+export const withdraw = (clients, balances, client, amount) => {
   const ind = clients.indexOf(client);
   if (amount > balances[ind]) {
     return -1;
@@ -25,3 +25,4 @@ const withdraw = (clients, balances, client, amount) => {
     return result[ind];
 }
 }
+

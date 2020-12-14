@@ -6,7 +6,7 @@
 // input arr
 // output arr
 
-const reverseArray = (arr) =>{
+export const reverseArray = (arr) =>{
   if(Array.isArray(arr)){
   const copy = [...arr];
   const result = copy.reverse();
