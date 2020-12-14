@@ -17,11 +17,13 @@ const countOccurrences = (str, findStr) => {
   let pos = 0;
 
   while (true) {
+      // eslint-disable-next-line prefer-const
       let foundPos = str.indexOf(findStr, pos);
 
       if (foundPos == -1)
           break;
 
+      // eslint-disable-next-line no-plusplus
       sum++;
       pos = foundPos + 1;
   }
