@@ -6,6 +6,7 @@
 // input func
 // output func
 
+// eslint-disable-next-line no-unused-vars
 function saveCalls(func) {
   function withMemory(...args) {
     withMemory.calls.push(args);
