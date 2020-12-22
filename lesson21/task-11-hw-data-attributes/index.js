@@ -6,11 +6,20 @@
 /* eslint-disable func-names */
 // eslint-disable-next-line lines-around-directive
 
-export const squaredNumbers = () => {
+/* export const squaredNumbers = () => {
   const getItemsNumber = document.querySelectorAll(".number");
   [...getItemsNumber].forEach(
     (el) => (el.dataset.squaredNumbers = Math.pow(el.dataset.number, 2))
   );
 };
+*/
 
-squaredNumbers();
+export const squaredNumbers = () => {
+  const getItemsNumber = document.querySelectorAll('.number');
+  [...getItemsNumber].forEach((el) => {
+    const num = el.dataset.number;
+    el.dataset.squaredNumber = num * num;
+  });
+}
+
+
