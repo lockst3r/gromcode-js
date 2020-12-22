@@ -19,5 +19,3 @@ export const finishList = () => {
   createItemLiEight.textContent = "8";
   getItemList.append(createItemLiEight);
 };
-
-finishList();
