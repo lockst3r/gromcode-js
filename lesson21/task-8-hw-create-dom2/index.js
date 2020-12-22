@@ -2,7 +2,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable func-names */
 // eslint-disable-next-line lines-around-directive
-
 export const finishList = () => {
   const getItemList = document.querySelector(".list");
   const getItemLiSpeacial = document.querySelector(".special");
