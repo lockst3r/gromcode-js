@@ -7,7 +7,7 @@ export const createButton = (buttonText) => {
   const getItemBody = document.querySelector("body");
   const createItemButton = document.createElement("button");
   createItemButton.textContent = `${buttonText}`;
-  getItemBody.append(createButton);
+  getItemBody.append(createItemButton);
 };
 
 createButton();
