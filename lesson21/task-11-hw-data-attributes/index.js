@@ -8,9 +8,7 @@
 
 export const squaredNumbers = () => {
   const getItemsNumber = document.querySelectorAll(".number");
-  [...getItemsNumber].map(
+  [...getItemsNumber].forEach(
     (el) => (el.dataset.squaredNumbers = Math.pow(el.dataset.number, 2))
   );
 };
-
-
