@@ -13,4 +13,3 @@ export const finishForm = () => {
   getItemLoginForm.prepend(createItenInput);
 };
 
-finishForm();
