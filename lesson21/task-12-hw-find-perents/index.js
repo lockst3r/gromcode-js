@@ -6,11 +6,8 @@
 /* eslint-disable func-names */
 // eslint-disable-next-line lines-around-directive
 
-export const squaredNumbers = () => {
-  const getItemsNumber = document.querySelectorAll(".number");
-  [...getItemsNumber].forEach(
-    (el) => (el.dataset.squaredNumbers = Math.pow(el.dataset.number, 2))
-  );
+export const getSection = (num) => {
+  const getItemSpan = document.querySelector(`span[data-number="${num}"]`);
+  const getItemDiv = getItemSpan.closest(".box");
+  return getItemDiv.dataset.section;
 };
-
-squaredNumbers();
