@@ -3,13 +3,13 @@
 /* eslint-disable func-names */
 // eslint-disable-next-line lines-around-directive
 
-export const getTitleElement =()=>{
+const getTitleElement =()=>{
 const titleElem = document.querySelector('.title');
 console.dir(titleElem);
 return titleElem;
 }
 
-export const getInputElement = () => {
+const getInputElement = () => {
   const inputElem = document.querySelector('[type="text"]');
   console.dir(inputElem);
   return inputElem;
