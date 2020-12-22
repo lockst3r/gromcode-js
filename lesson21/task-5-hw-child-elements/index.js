@@ -3,7 +3,7 @@
 /* eslint-disable func-names */
 // eslint-disable-next-line lines-around-directive
 
-const setButton = (buttonText) => {
+export const setButton = (buttonText) => {
   const getItemBody = document.querySelector("body");
   getItemBody.innerHTML = `<button>${buttonText}</button>`;
 };
