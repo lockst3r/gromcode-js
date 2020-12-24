@@ -11,7 +11,7 @@ const tasks = [
   { text: "Buy meat", done: true },
 ];
 
-const renderListItems = listItems => {
+const renderListItems = (listItems) => {
   const listElem = document.querySelector(".list");
 
   const listItemsElems = listItems
