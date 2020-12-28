@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-expressions */
+/* eslint-disable no-multi-assign */
 const getItemCounter = document.querySelector(".counter");
 const getItemCouterValue = document.querySelector(".counter__value");
 
@@ -7,7 +9,7 @@ const onCounterChange = (e) => {
   if (!isButton) {
     return;
   }
-  const action = e.target.dataset.action;
+  const { action } = e.target.dataset;
   const oldValue = Number(getItemCouterValue.textContent);
 
   const newValue = (getItemCouterValue.textContent =
@@ -20,7 +22,7 @@ const onCounterChange = (e) => {
 getItemCounter.addEventListener("click", onCounterChange);
 
 const onStorageChange = (e) => {
-  getItemCouterValue, (textContent = e.newValue);
+  getItemCouterValue.textContent = e.newValue;
 };
 
 window.addEventListener("storage", onStorageChange);
