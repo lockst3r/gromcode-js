@@ -1,3 +1,6 @@
+// eslint-disable-next-line no-unused-vars
+const storage = {};
+
 export const setItem = (key, value) => {
   localStorage.setItem(key, JSON.stringify(value));
 };
