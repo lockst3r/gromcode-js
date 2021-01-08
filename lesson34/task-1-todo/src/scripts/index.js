@@ -1,6 +1,6 @@
 /* eslint-disable import/extensions */
 
-import { initTodoListHandlers } from "./todoList";
+import { initTodoListHandlers } from "./todoList.js";
 import { renderTasks } from "./renderer.js";
 import { getTasksList } from "./tasksGateway.js";
 import { setItem } from "./storage.js";

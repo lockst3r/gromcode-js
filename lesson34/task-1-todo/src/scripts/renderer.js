@@ -1,4 +1,5 @@
-import { getItem } from "./storage";
+/* eslint-disable import/extensions */
+import { getItem } from "./storage.js";
 
 const listElem = document.querySelector(".list");
 

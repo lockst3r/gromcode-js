@@ -1,6 +1,7 @@
-import { renderTasks } from "./renderer";
-import { getItem, setItem } from "./storage";
-import { updateTask, getTasksList, deleteTask } from "./tasksGateway";
+/* eslint-disable import/extensions */
+import { renderTasks } from "./renderer.js";
+import { getItem, setItem } from "./storage.js";
+import { updateTask, getTasksList, deleteTask } from "./tasksGateway.js";
 
 export const onToggleTask = (e) => {
   const isCheckbox = e.target.classList.contains("list-item__checkbox");
