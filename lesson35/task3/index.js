@@ -1,9 +1,9 @@
 /* eslint-disable no-alert */
 /* eslint-disable import/extensions */
-import { fetchUserData, fetchRepositories } from "./gateways.js";
-import { renderUserData } from "./user.js";
-import { renderRepos, cleanReposList } from "./repos.js";
-import { showSpinner, hideSpinner } from "./spinner.js";
+import { fetchUserData, fetchRepositories } from "./src/scripts/gateways.js";
+import { renderUserData } from "./src/scripts/user.js";
+import { renderRepos, cleanReposList } from "./src/scripts/repos.js";
+import { showSpinner, hideSpinner } from "./src/scripts/spinner.js";
 
 const defultUser = {
   avatar_url: "https://avatars3.githubusercontent.com/u10001",
