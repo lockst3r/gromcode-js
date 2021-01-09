@@ -1,3 +1,4 @@
+/* eslint-disable no-alert */
 const baseUrl = "https://5ff86cd110778b001704348e.mockapi.io/api/v1/test";
 
 const loginForm = document.querySelector('.login-form');
